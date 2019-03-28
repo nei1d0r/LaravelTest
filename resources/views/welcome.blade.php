@@ -11,5 +11,6 @@
 <body>
     <h1>And We're Off!</h1>
     <p>Git test<p>
+    <p>Git pull test</p>
 </body>
 </html>
