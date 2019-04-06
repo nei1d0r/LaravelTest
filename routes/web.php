@@ -11,20 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    $tasks = [
-        'Go to the store',
-        'Get milk',
-        'Go to work',
-        'Go to the concert'
-    ];
-    return view('welcome')->withTasks($tasks)->withFoo('bazbar');
-});
-
-Route::get('/about', function () {
-    return view('about');
-});
-
-Route::get('/contact', function () {
-    return view('contact');
-});
+Route::get('/', 'PagesController@home');
+Route::get('about', 'PagesController@about');
+Route::get('contact', 'PagesController@contact');
