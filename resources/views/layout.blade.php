@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Page Title</title>
+    <title>@yield('title','Default')</title>
 </head>
 <body>
     <ul>

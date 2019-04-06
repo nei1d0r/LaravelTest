@@ -12,7 +12,13 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $tasks = [
+        'Go to the store',
+        'Get milk',
+        'Go to work',
+        'Go to the concert'
+    ];
+    return view('welcome')->withTasks($tasks)->withFoo('bazbar');
 });
 
 Route::get('/about', function () {
